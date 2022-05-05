@@ -1,0 +1,18 @@
+[core]
+    remote = cos-xm
+['remote "remote-storage"']
+    url = s3://wine-bucket-test/rain_australia/
+    endpointurl = https://s3.us-south.cloud-object-storage.appdomain.cloud
+['remote "cos-xm"']
+    url = s3://xm-mlops/rain_australia/
+    endpointurl = https://s3.eu-de.cloud-object-storage.appdomain.cloud
+    region = eu-de
+    access_key_id = 1503db13e0b64aee9a3b036c364037d5
+    secret_access_key = 7834a12c46c0016ae97799f90e6ff1ae7800bbf5b45a5d57
+['remote "cos-cc"']
+    url = s3://xm-mlops/rain_australia/
+    endpointurl = https://s3.eu-de.cloud-object-storage.appdomain.cloud
+    region = eu-de
+    access_key_id c2131bdb4ff44cc49c4654b9d8ae9327
+    secret_access_key c540e45ee9ba9dbccda806a44288b85a5ebd3bdbfacfa0f2
+  
