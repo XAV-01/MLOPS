@@ -1,0 +1,15 @@
+[core]
+    remote = cos-xm
+['remote "remote-storage"']
+    url = s3://wine-bucket-test/rain_australia/
+    endpointurl = https://s3.us-south.cloud-object-storage.appdomain.cloud
+['remote "cos-cc"']
+    url = s3://xm-mlops/rain_australia/
+    endpointurl = https://s3.eu-de.cloud-object-storage.appdomain.cloud
+    region = eu-de
+    profile = myprofile-cc
+['remote "cos-xm"']
+    url = s3://xm-mlops/rain_australia/
+    endpointurl = https://s3.eu-de.cloud-object-storage.appdomain.cloud
+    region = eu-de
+    profile = myprofile-xm
