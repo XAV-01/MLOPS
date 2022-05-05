@@ -25,8 +25,8 @@ stages:
       md5: 95b181eb72549ca453850bed665a59d4
       size: 5069067
     - path: ./src/model.py
-      md5: f1e2375175fa45e36a8450d52491daa3
-      size: 4664
+      md5: 79f64389accd62c74483da5be427f5d2
+      size: 4696
     - path: ./src/train.py
       md5: 1b5c6c1786d40c9505b2261f11a3b274
       size: 1002
@@ -48,8 +48,8 @@ stages:
       md5: 7e466368d793d09316fc1e078111a9de
       size: 882
     - path: ./src/model.py
-      md5: f1e2375175fa45e36a8450d52491daa3
-      size: 4664
+      md5: 79f64389accd62c74483da5be427f5d2
+      size: 4696
     outs:
     - path: ./results/metrics.json
       md5: f2e62f856cac19dc39b29b2fa9e85ad1
