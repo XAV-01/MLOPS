@@ -16,8 +16,8 @@ jobs:
         run: |
           echo "IBMCLOUD_API_KEY ${{ secrets.IBMCLOUD_API_KEY }}"
           echo "AWS KEY ${{ secrets.AWS_ACCESS_KEY_ID }}"
-          echo "AWS KEY ${{ secrets.GITHUB_TOKEN }}"
-          echo "AWS KEY ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+          #echo "AWS KEY ${{ secrets.GITHUB_TOKEN }}"
+          #echo "AWS KEY ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
 
           # Install requirements
           pip install -r requirements.txt

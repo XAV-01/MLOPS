@@ -23,8 +23,8 @@ jobs:
       run: |
         echo "TEST_ENV $TEST_ENV"
         echo "TEST_ENV ${{ env.TEST_ENV}}"
-        echo "AWS KEY ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
-        echo "AWS KEY $AWS_SECRET_ACCESS_KEY"
+        echo "AWS KEY ${{ secrets.AWS_ACCESS_KEY_ID }}"
+        echo "AWS KEY $AWS_ACCESS_KEY_ID"
         python -m pip install --upgrade pip
         pip install pytest
         #pip install black
