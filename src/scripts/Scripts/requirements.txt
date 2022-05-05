@@ -1,9 +1,11 @@
-sklearn
+scikit-learn>=0.23
 pandas
 seaborn
 matplotlib
-yaml
 joblib
 numpy
-importlib
-json
+ibm_watson_machine_learning
+pyyaml
+pytest
+pytest-dependency
+pre-commit
