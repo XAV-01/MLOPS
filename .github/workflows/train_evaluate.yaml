@@ -12,9 +12,14 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          IBMCLOUD_API_KEY: ${{ secrets.IBMCLOUD_API_KEY }}
         run: |
-          # Install requirements
+          echo "IBMCLOUD_API_KEY ${{ secrets.IBMCLOUD_API_KEY }}"
           echo "AWS KEY ${{ secrets.AWS_ACCESS_KEY_ID }}"
+          echo "AWS KEY ${{ secrets.GITHUB_TOKEN }}"
+          echo "AWS KEY ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+
+          # Install requirements
           pip install -r requirements.txt
 
           # Pull data & run-cache from S3 and reproduce pipeline
