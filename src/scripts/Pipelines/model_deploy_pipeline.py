@@ -46,13 +46,18 @@ SPACE_ID = credentials["space_id"]
 
 client.set.default_space(SPACE_ID)
 
+print(client.software_specifications.list())
+
 model_props = {
     client.repository.ModelMetaNames.NAME: MODEL_NAME,
     client.repository.ModelMetaNames.TYPE: metadata["model_type"],
     client.repository.ModelMetaNames.SOFTWARE_SPEC_UID: client.software_specifications.get_id_by_name(
-        "default_py3.7"
+        "runtime-22.1-py3.9" #"default_py3.7"
     ),
 }
+
+# Supported software specifications for scikit-learn_0.23 are: default_py3.7, default_py3.7_opence, default_py3.8
+# Supported software specifications for scikit-learn_1.0 is: runtime-22.1-py3.9
 
 model_details = client.repository.store_model(model=MODEL, meta_props=model_props)
 model_uid = client.repository.get_model_uid(model_details)
