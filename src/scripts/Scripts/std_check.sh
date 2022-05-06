@@ -65,11 +65,11 @@ else
 fi
 
 
-if ! black ./$PROJ_PATH --check; then
-    echo -e "${RED}Please run the command 'black' to format your files"
-    exit 0
-else
-    echo -e "${GRE}Files formated, moving foward"
-fi
+#if ! black ./$PROJ_PATH --check; then
+#    echo -e "${RED}Please run the command 'black' to format your files"
+#    exit 0
+#else
+#    echo -e "${GRE}Files formated, moving foward"
+#fi
 
 
