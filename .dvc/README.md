@@ -2,6 +2,8 @@
 
 ## either 
 
+Methode si déploiement via dvc
+
 ~/.aws/credentials     
 ```config
 [default]
