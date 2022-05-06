@@ -14,14 +14,15 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           IBMCLOUD_API_KEY: ${{ secrets.IBMCLOUD_API_KEY }}
         run: |
-          echo "IBMCLOUD_API_KEY ${{ secrets.IBMCLOUD_API_KEY }}"
-          echo "AWS KEY ${{ secrets.AWS_ACCESS_KEY_ID }}"
+          #echo "IBMCLOUD_API_KEY ${{ secrets.IBMCLOUD_API_KEY }}"
+          #echo "AWS KEY ${{ secrets.AWS_ACCESS_KEY_ID }}"
           #echo "AWS KEY ${{ secrets.GITHUB_TOKEN }}"
           #echo "AWS KEY ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
 
           # Install requirements
           pip install -r requirements.txt
 
+          echo "pulling data with dvc"
           # Pull data & run-cache from S3 and reproduce pipeline
           dvc pull --run-cache
           dvc repro
