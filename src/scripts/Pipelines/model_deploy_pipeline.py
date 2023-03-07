@@ -46,6 +46,10 @@ SPACE_ID = credentials["space_id"]
 
 client.set.default_space(SPACE_ID)
 
+print("MODEL_NAME "+  MODEL_NAME )
+print("DEPLOY_NAME "+  DEPLOY_NAME )
+print("SPACE_ID "+  SPACE_ID )
+
 print(client.software_specifications.list())
 
 model_props = {
@@ -75,6 +79,8 @@ deployment_uid = client.deployments.get_uid(deployment)
 
 metadata["model_uid"] = model_uid
 metadata["deployment_uid"] = deployment_uid
+
+print("Updating metadata.yaml model_uid "+ model_uid+" deployment_uid "+  deployment_uid )
 
 f = open(META_PATH, "w+")
 yaml.dump(metadata, f, allow_unicode=True)
