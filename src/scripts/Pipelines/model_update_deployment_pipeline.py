@@ -45,7 +45,7 @@ client.set.default_space(SPACE_ID)
 
 change_meta = {client.deployments.ConfigurationMetaNames.ASSET: {"id": MODEL_GUID}}
 
-print("Alterando o deploy abaixo: ")
+print("Modification of the deployment below: ")
 print(client.deployments.get_details(DEPLOYMENT_UID))
 
 client.deployments.update(DEPLOYMENT_UID, change_meta)
